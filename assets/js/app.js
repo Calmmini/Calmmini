@@ -11,8 +11,8 @@
   /* ===== BETALING CONFIG =====================================================
      Vul hier de URL van je Cloudflare Worker in (zie cloudflare-worker/README-betaling.md).
      Zolang dit leeg is, werkt de checkout als demo (zonder echte betaling).      */
-  var PAY_ENDPOINT = "";            // bv. "https://calmmini-pay.JOUW-SUBDOMEIN.workers.dev"
-  var SHIPPING = 4.95;              // vast verzendbedrag — houd dit gelijk aan SHIPPING in de Worker
+  var PAY_ENDPOINT = https://calmmini-pay.dennisvvdijk98.workers.dev/;            // bv. "https://calmmini-pay.JOUW-SUBDOMEIN.workers.dev"
+  var SHIPPING = 6.95;              // vast verzendbedrag — houd dit gelijk aan SHIPPING in de Worker
   /* =========================================================================== */
 
   /* ---------- helpers ---------- */
