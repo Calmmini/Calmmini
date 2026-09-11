@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /afrekenen/
-Disallow: /winkelwagen/
-
-Sitemap: https://www.calmmini.nl/sitemap.xml
