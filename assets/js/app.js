@@ -14,7 +14,7 @@
      Zolang dit leeg is, werkt de checkout als demo (zonder echte betaling).      */
   // Bestellingen en contactberichten komen per e-mail binnen via Web3Forms.
   // Vul hier je gratis Access Key in (zie bestellingen-per-mail.md). Leeg = demo-modus.
-  var FORM_KEY = "";                // bv. "abcd1234-....." (Web3Forms access key)
+  var FORM_KEY = "aba5d71a-75a7-4e04-bdea-879018845952";                // bv. "abcd1234-....." (Web3Forms access key)
   var FORM_ENDPOINT = "https://api.web3forms.com/submit";
   /* =========================================================================== */
 
