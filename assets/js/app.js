@@ -317,7 +317,8 @@
           items: cart.map(function (i) { return { slug: i.slug, qty: i.qty }; }),
           method: methode,
           customer: {
-            email: g("email"), voornaam: g("voornaam"), achternaam: g("achternaam"),
+            email: g("email"), telefoon: g("telefoon"),
+            voornaam: g("voornaam"), achternaam: g("achternaam"),
             postcode: g("postcode"), huisnummer: g("huisnummer"),
             straat: g("straat"), plaats: g("plaats"), land: g("land"),
           },
