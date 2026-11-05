@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Afrekenen | CALMMINI</title>
-<meta name="description" content="Rond je bestelling af bij CALMMINI.">
+<meta name="description" content="Rond uw bestelling af bij CALMMINI.">
 <link rel="canonical" href="https://www.calmmini.nl/afrekenen/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#2A251F">
@@ -13,12 +13,12 @@
 <meta property="og:site_name" content="CALMMINI">
 <meta property="og:locale" content="nl_NL">
 <meta property="og:title" content="Afrekenen | CALMMINI">
-<meta property="og:description" content="Rond je bestelling af bij CALMMINI.">
+<meta property="og:description" content="Rond uw bestelling af bij CALMMINI.">
 <meta property="og:url" content="https://www.calmmini.nl/afrekenen/">
 <meta property="og:image" content="https://www.calmmini.nl/assets/img/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Afrekenen | CALMMINI">
-<meta name="twitter:description" content="Rond je bestelling af bij CALMMINI.">
+<meta name="twitter:description" content="Rond uw bestelling af bij CALMMINI.">
 <meta name="twitter:image" content="https://www.calmmini.nl/assets/img/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,18 +82,26 @@
 <div class="wrap">
   <div data-order-confirm hidden class="empty-state confirm-card">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 6L9 17l-5-5"/></svg>
-    <h2>Bedankt voor je bestelling!</h2>
-    <p class="lead" style="margin-inline:auto">We hebben je bestelling ontvangen. Ons team neemt zo snel mogelijk per e-mail contact met je op met een betaallink en de verdere details.</p>
-    <p style="margin-inline:auto;max-width:46ch;color:var(--ink-soft)">Houd ook je spam-map in de gaten. Een vraag in de tussentijd? Mail ons gerust via <a href="mailto:info@calmmini.nl">info@calmmini.nl</a>.</p>
+    <h2>Bedankt voor uw bestelling!</h2>
+    <p class="lead" style="margin-inline:auto">We hebben uw bestelling ontvangen. Ons team neemt zo snel mogelijk per e-mail contact met u op met een betaallink en de verdere details.</p>
+    <p style="margin-inline:auto;max-width:46ch;color:var(--ink-soft)">Houd ook uw spam-map in de gaten. Een vraag in de tussentijd? Mail ons gerust via <a href="mailto:info@calmmini.nl">info@calmmini.nl</a>.</p>
     <a class="btn btn-primary btn-lg" href="../producten/index.html" style="margin-top:1.2rem">Verder winkelen</a>
   </div>
   <form data-checkout-form data-checkout-wrap class="checkout">
     <div>
       <div class="form-card">
+        <h3>Levering</h3>
+        <div class="pay-methods">
+          <label class="pay-opt"><input type="radio" name="bezorgmethode" value="bezorgen" checked> Bezorgen — € 8,00</label>
+          <label class="pay-opt"><input type="radio" name="bezorgmethode" value="afhalen"> Afhalen in Amersfoort — gratis</label>
+        </div>
+        <p class="note" data-afhaal-info hidden style="margin-top:.7rem">U haalt uw bestelling op in Amersfoort. Na uw bestelling nemen we contact met u op om door te geven waar en wanneer u kunt ophalen.</p>
+      </div>
+      <div class="form-card">
         <h3>Contactgegevens</h3>
         <div class="field full"><label>E-mailadres</label><input type="email" name="email" required placeholder="naam@voorbeeld.nl"></div>
       </div>
-      <div class="form-card">
+      <div class="form-card" data-bezorg-velden>
         <h3>Bezorgadres</h3>
         <div class="frow">
           <div class="field"><label>Voornaam</label><input name="voornaam" required></div>
@@ -109,14 +117,14 @@
       </div>
     </div>
     <aside class="summary">
-      <h3>Je bestelling</h3>
+      <h3>Uw bestelling</h3>
       <div data-checkout-lines></div>
       <div class="row" style="margin-top:1rem"><span>Subtotaal</span><span data-subtotal>€ 0,00</span></div>
-      <div class="row"><span>Verzending</span><span data-ship>€ 0,00</span></div>
+      <div class="row"><span data-ship-label>Verzending</span><span data-ship>€ 0,00</span></div>
       <div class="row total"><span>Totaal</span><span data-total>€ 0,00</span></div>
       <button class="btn btn-primary btn-block btn-lg" type="submit" style="margin-top:1.2rem">Naar betalen</button>
       <p class="note" data-pay-error hidden style="color:var(--clay)"></p>
-      <p class="note">Je betaalt veilig via Mollie — iDEAL, Bancontact of creditcard. Verzendkosten: € 8,00.</p>
+      <p class="note">U betaalt veilig via Mollie — iDEAL, Bancontact of creditcard. Bezorgen € 8,00, afhalen in Amersfoort is gratis.</p>
     </aside>
   </form>
 </div>

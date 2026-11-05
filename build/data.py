@@ -25,13 +25,13 @@ CATEGORIES = [
                "bedoeld als zachte voorbereiding op scrubben: warmte, inwerken, afspoelen "
                "en daarna pas exfolieren.",
         "body": [
-            'Sabon beldi, ook wel savon noir of Marokkaanse zwarte zeep genoemd, is de klassieke eerste stap van het hammamritueel. Deze zachte zeep op olijfoliebasis wordt op een warme, vochtige huid aangebracht en bereidt de huid voor op de gommage met een kessa. Bij CALMMINI kies je uit naturel, nila, eucalyptus, musk en aker fassi.',
-            'Onze sabon beldi is kant-en-klaar: je hoeft niets aan te maken. Breng een dunne laag aan, laat kort intrekken, spoel af en scrub daarna zacht met een kessa-handschoen. Zo haal je het meeste uit je Marokkaanse zwarte zeep, thuis in je eigen badkamer. Besteld en bezorgd in heel Nederland.',
+            'Sabon beldi, ook wel savon noir of Marokkaanse zwarte zeep genoemd, is de klassieke eerste stap van het hammamritueel. Deze zachte zeep op olijfoliebasis wordt op een warme, vochtige huid aangebracht en bereidt de huid voor op de gommage met een kessa. Bij CALMMINI kiest u uit naturel, nila, eucalyptus, musk en aker fassi.',
+            'Onze sabon beldi is kant-en-klaar: u hoeft niets aan te maken. Breng een dunne laag aan, laat kort intrekken, spoel af en scrub daarna zacht met een kessa-handschoen. Zo haalt u het meeste uit uw Marokkaanse zwarte zeep, thuis in uw eigen badkamer. Besteld en bezorgd in heel Nederland.',
         ],
         "faq": [
             ('Wat is sabon beldi?', 'Sabon beldi is Marokkaanse zwarte zeep (savon noir) op olijfoliebasis. Het is de traditionele eerste reinigingsstap van het hammamritueel, vlak voor het scrubben.'),
-            ('Hoe gebruik je Marokkaanse zwarte zeep?', 'Breng de zeep aan op warme, vochtige huid, laat 2-5 minuten intrekken, spoel af en scrub daarna zacht met een kessa-handschoen.'),
-            ('Welke variant kan ik het beste kiezen?', 'Naturel is de veelzijdige klassieker. Nila, eucalyptus, musk en aker fassi voegen elk een eigen geur- en verzorgingsaccent toe. Twijfel je? Neem gerust contact op.'),
+            ('Hoe gebruikt u Marokkaanse zwarte zeep?', 'Breng de zeep aan op warme, vochtige huid, laat 2-5 minuten intrekken, spoel af en scrub daarna zacht met een kessa-handschoen.'),
+            ('Welke variant kan ik het beste kiezen?', 'Naturel is de veelzijdige klassieker. Nila, eucalyptus, musk en aker fassi voegen elk een eigen geur- en verzorgingsaccent toe. Twijfelt u? Neem gerust contact op.'),
         ],
         "ritual": "Sabon beldi is bedoeld als zachte voorbereiding voor het scrubben. Eerst sabon beldi insmeren, vervolgens in laten werken, afspoelen en afsluitend scrubben met een kessa.",
         "seo_title": "Sabon Beldi kopen - Marokkaanse zwarte zeep | CALMMINI",
@@ -68,11 +68,11 @@ CATEGORIES = [
                  "met water tot een papje en onderdeel van een authentieke hammambeleving.",
         "tip": None,
         "body": [
-            'Hammamkruiden bestaat uit traditionele kruidenblends voor lichaam en haar die je met water aanmaakt tot een papje. Het is een authentiek onderdeel van de Marokkaanse hammambeleving. CALMMINI biedt een blend voor het lichaam en een blend voor hoofdhuid en haar.',
-            'Maak het poeder aan met water, breng het aan op vochtige huid of nat haar, laat kort inwerken en spoel goed uit. Zo bouw je stap voor stap een natuurlijk hammamritueel op in je eigen badkamer. Besteld en bezorgd in heel Nederland.',
+            'Hammamkruiden bestaat uit traditionele kruidenblends voor lichaam en haar die u met water aanmaakt tot een papje. Het is een authentiek onderdeel van de Marokkaanse hammambeleving. CALMMINI biedt een blend voor het lichaam en een blend voor hoofdhuid en haar.',
+            'Maak het poeder aan met water, breng het aan op vochtige huid of nat haar, laat kort inwerken en spoel goed uit. Zo bouwt u stap voor stap een natuurlijk hammamritueel op in uw eigen badkamer. Besteld en bezorgd in heel Nederland.',
         ],
         "faq": [
-            ('Hoe maak je hammampoeder aan?', 'Meng het poeder met water tot een papje, breng het aan op vochtige huid of nat haar, laat kort inwerken en spoel goed uit.'),
+            ('Hoe maakt u hammampoeder aan?', 'Meng het poeder met water tot een papje, breng het aan op vochtige huid of nat haar, laat kort inwerken en spoel goed uit.'),
             ('Wat is het verschil tussen de lichaam- en haarblend?', 'De lichaamsblend bevat onder meer lavendel, eucalyptus en munt; de haarblend bevat kruiden als hennablad, amla en shikakai voor hoofdhuid en haar.'),
         ],
         "seo_title": "Hammamkruiden kopen - hammamkruiden voor lichaam en haar | CALMMINI",
@@ -93,7 +93,7 @@ CATEGORIES = [
             'Gebruik weinig: enkele druppels op een licht vochtige huid of droge plekken zijn meestal genoeg. Bewaar de oliën koel, droog en uit direct zonlicht. Natuurlijke Marokkaans geinspireerde verzorging, bezorgd in heel Nederland.',
         ],
         "faq": [
-            ('Waarvoor gebruik je verzorgingsolie?', 'Voor huid, haarpunten, massage en droge zones - meestal als afsluitende, verzorgende stap van het ritueel.'),
+            ('Waarvoor gebruikt u verzorgingsolie?', 'Voor huid, haarpunten, massage en droge zones - meestal als afsluitende, verzorgende stap van het ritueel.'),
             ('Hoeveel olie heb ik nodig?', 'Weinig: enkele druppels volstaan. Breng aan op een licht vochtige huid en masseer rustig in.'),
             ('Welke olie past bij mij?', 'Saffloer en abrikozenpit zijn licht en fijn voor het gezicht; amandel is een veelzijdige allrounder; aloe vera is verzachtend voor droge of gevoelige zones.'),
         ],
@@ -110,7 +110,7 @@ CATEGORIES = [
                  "Mediterraanse scrub voor een gladde, verzorgde huid.",
         "tip": None,
         "body": [
-            'In deze categorie combineer je rijke verzorging met zachte exfoliatie: shea butter voor intensieve verzorging van droge zones en een Mediterraanse scrub met citroenmelisse voor een gladde, verzorgde huid. Samen zorgen ze voor een zacht en verzorgd huidgevoel na het hammamritueel.',
+            'In deze categorie combineert u rijke verzorging met zachte exfoliatie: shea butter voor intensieve verzorging van droge zones en een Mediterraanse scrub met citroenmelisse voor een gladde, verzorgde huid. Samen zorgen ze voor een zacht en verzorgd huidgevoel na het hammamritueel.',
             'Gebruik de scrub op vochtige huid en masseer zacht in; breng daarna de shea butter aan op droge plekjes, lippen of haarpunten. Natuurlijke Marokkaans geinspireerde verzorging, bezorgd in heel Nederland.',
         ],
         "faq": [
@@ -130,16 +130,16 @@ CATEGORIES = [
                  "puimsteen en een mengkom voor het aanmaken van sabon, ghassoul en scrub.",
         "tip": None,
         "body": [
-            'De juiste accessoires maken je hammamritueel thuis compleet. Bij CALMMINI vind je een kessa-scrubhandschoen voor de gommage, een puimsteen voor ruwe hielen en een mengkom-set om sabon, ghassoul en scrub eenvoudig aan te maken en aan te brengen.',
+            'De juiste accessoires maken uw hammamritueel thuis compleet. Bij CALMMINI vindt u een kessa-scrubhandschoen voor de gommage, een puimsteen voor ruwe hielen en een mengkom-set om sabon, ghassoul en scrub eenvoudig aan te maken en aan te brengen.',
             'Combineer de accessoires met sabon beldi, ghassoul en scrub voor een volledig Marokkaans verzorgingsritueel. Besteld en bezorgd in heel Nederland.',
         ],
         "faq": [
-            ('Wat doet een kessa-handschoen?', 'Met een kessa scrub je na het inwerken van sabon beldi dode huidcellen weg - de kenmerkende gommage-stap van de hammam.'),
-            ('Waar gebruik ik de mengkom voor?', 'Voor het aanmaken en aanbrengen van sabon beldi, ghassoul en scrub, zonder geknoei op je handen.'),
+            ('Wat doet een kessa-handschoen?', 'Met een kessa scrubt u na het inwerken van sabon beldi dode huidcellen weg - de kenmerkende gommage-stap van de hammam.'),
+            ('Waar gebruik ik de mengkom voor?', 'Voor het aanmaken en aanbrengen van sabon beldi, ghassoul en scrub, zonder geknoei op uw handen.'),
         ],
         "seo_title": "Kessa, puimsteen & mengkom - hammam-accessoires | CALMMINI",
         "seo_desc": "Hammam-accessoires: kessa-scrubhandschoen, puimsteen en mengkom. "
-                    "De benodigdheden om je hammamritueel thuis compleet te maken.",
+                    "De benodigdheden om uw hammamritueel thuis compleet te maken.",
     },
 ]
 
@@ -285,10 +285,10 @@ BLOG = [
     {
         "slug": "hammamritueel-thuis",
         "title": "Het Marokkaanse hammamritueel thuis: een complete gids",
-        "excerpt": "Ontdek hoe je de rust en verzorging van de Marokkaanse hammam naar je eigen "
+        "excerpt": "Ontdek hoe u de rust en verzorging van de Marokkaanse hammam naar uw eigen "
                    "badkamer haalt - stap voor stap.",
         "seo_title": "Hammamritueel thuis doen - complete gids | CALMMINI",
-        "seo_desc": "Zo doe je een Marokkaans hammamritueel thuis: van sabon beldi en gommage tot "
+        "seo_desc": "Zo doet u een Marokkaans hammamritueel thuis: van sabon beldi en gommage tot "
                     "ghassoul, kruiden en oliën. De complete stap-voor-stap gids van CALMMINI.",
         "date": "2025-11-04",
         "read": 7,
@@ -299,8 +299,8 @@ BLOG = [
             ("p", "De hammam is van oudsher een centraal onderdeel van de Marokkaanse verzorgingscultuur. "
                   "Het is een plek van reiniging, rust en ontmoeting. Het bijbehorende ritueel kent een "
                   "vaste opbouw en wordt van generatie op generatie doorgegeven."),
-            ("p", "Je hoeft niet naar Marokko af te reizen om deze traditie te ervaren. Met de juiste "
-                  "producten breng je de sfeer en de opbouw van het hammamritueel eenvoudig naar je eigen badkamer."),
+            ("p", "U hoeft niet naar Marokko af te reizen om deze traditie te ervaren. Met de juiste "
+                  "producten brengt u de sfeer en de opbouw van het hammamritueel eenvoudig naar uw eigen badkamer."),
             ("h2", "De stappen van het ritueel"),
             ("h3", "1. Opwarmen"),
             ("p", "Het ritueel begint met warmte en stoom, zodat het lichaam tot rust komt en de huid zich voorbereidt."),
@@ -313,18 +313,18 @@ BLOG = [
             ("p", "Kant-en-klare ghassoul, klei en hammamkruiden vormen de verzorgende stappen voor haar en lichaam."),
             ("h3", "5. Olien"),
             ("p", "Tot slot worden natuurlijke oliën gebruikt om het ritueel af te sluiten."),
-            ("h2", "Alles voor jouw ritueel"),
-            ("p", "Bij CALMMINI vind je de producten die bij elke stap van het hammamritueel horen - van sabon "
+            ("h2", "Alles voor uw ritueel"),
+            ("p", "Bij CALMMINI vindt u de producten die bij elke stap van het hammamritueel horen - van sabon "
                   "beldi en scrub tot kruiden en oliën."),
         ],
     },
     {
         "slug": "wat-is-ghassoul",
-        "title": "Wat is ghassoul en hoe gebruik je het?",
+        "title": "Wat is ghassoul en hoe gebruikt u het?",
         "excerpt": "Ghassoul is een van de bekendste producten uit de Marokkaanse hammam. We leggen uit "
                    "wat het is en hoe het in het ritueel past.",
         "seo_title": "Wat is ghassoul? Uitleg en gebruik | CALMMINI",
-        "seo_desc": "Wat is ghassoul en hoe gebruik je deze Marokkaanse klei voor huid en haar? "
+        "seo_desc": "Wat is ghassoul en hoe gebruikt u deze Marokkaanse klei voor huid en haar? "
                     "Lees de uitleg van CALMMINI en ontdek onze kant-en-klare ghassoul en klei.",
         "date": "2025-11-11",
         "read": 5,
@@ -339,7 +339,7 @@ BLOG = [
                   "als masker aangebracht op huid of haar, kort laten inwerken en daarna goed uitgespoeld. Laat "
                   "de klei niet volledig uitdrogen op de huid."),
             ("h2", "Kant-en-klaar bij CALMMINI"),
-            ("p", "De ghassoul en klei van CALMMINI zijn kant-en-klaar: je hoeft geen poeder aan te maken en kunt "
+            ("p", "De ghassoul en klei van CALMMINI zijn kant-en-klaar: u hoeft geen poeder aan te maken en kunt "
                   "ze direct gebruiken. Ontdek onder meer groene klei, rode klei en ghassoul met roos of oranjebloesem."),
         ],
     },
@@ -350,7 +350,7 @@ BLOG = [
                    "zwarte zeep is en welke varianten er bestaan.",
         "seo_title": "Sabon beldi / savon noir uitgelegd - zwarte zeep | CALMMINI",
         "seo_desc": "Wat is sabon beldi, oftewel savon noir of Marokkaanse zwarte zeep? Ontdek de traditie, "
-                    "de varianten en hoe je het gebruikt in het hammamritueel.",
+                    "de varianten en hoe u het gebruikt in het hammamritueel.",
         "date": "2025-11-18",
         "read": 5,
         "cat_link": "sabon-beldi",
@@ -360,7 +360,7 @@ BLOG = [
             ("p", "Sabon beldi, ook wel savon noir of Marokkaanse zwarte zeep genoemd, is een traditionele zeep "
                   "op olijfoliebasis die centraal staat in het hammamritueel. De zeep wordt als eerste reinigende "
                   "stap op warme, vochtige huid gebruikt."),
-            ("h2", "Hoe gebruik je het?"),
+            ("h2", "Hoe gebruikt u het?"),
             ("p", "Breng de zeep aan op warme, vochtige huid, laat kort intrekken en spoel af. Daarna volgt de "
                   "gommage met een kessa. Sabon beldi is dus geen gewone schuimende douchegel, maar een zachte "
                   "voorbereiding op het scrubben."),
@@ -371,7 +371,7 @@ BLOG = [
     },
     {
         "slug": "natuurlijke-marokkaanse-haarverzorging",
-        "title": "Natuurlijke Marokkaanse haarverzorging: waar begin je?",
+        "title": "Natuurlijke Marokkaanse haarverzorging: waar begint u?",
         "excerpt": "Van hammamkruiden tot oliën: een introductie in natuurlijke haarverzorging volgens "
                    "Marokkaanse traditie.",
         "seo_title": "Natuurlijke Marokkaanse haarverzorging - startgids | CALMMINI",
@@ -385,9 +385,9 @@ BLOG = [
             ("h2", "Haarverzorging volgens traditie"),
             ("p", "In de Marokkaanse verzorgingscultuur speelt natuurlijke haarverzorging een belangrijke rol. "
                   "Kruiden, klei en oliën worden al generaties lang ingezet als onderdeel van het ritueel."),
-            ("h2", "Waar begin je?"),
+            ("h2", "Waar begint u?"),
             ("p", "Een goede start is een combinatie van hammamkruiden voor het haar (met onder meer hennablad, "
-                  "amla en shikakai), ghassoul en een lichte plantaardige olie voor de haarpunten. Zo bouw je "
+                  "amla en shikakai), ghassoul en een lichte plantaardige olie voor de haarpunten. Zo bouwt u "
                   "stap voor stap een eigen ritueel op."),
             ("h2", "Ontdek de producten"),
             ("p", "Bekijk de categorieen hammampoeder, ghassoul & klei en verzorgingsolien voor alle natuurlijke "

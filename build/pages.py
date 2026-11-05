@@ -29,9 +29,9 @@ def build_home():
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <span class="eyebrow">Marokkaanse hammamrituelen</span>
-      <h1>De Marokkaanse hammam,<br>gewoon bij jou thuis.</h1>
-      <p class="lead">Breng de warmte van de Marokkaanse hammam naar je eigen badkamer. Natuurlijke zwarte zeep, ghassoul, klei, scrub, oliën en kruiden — voor een rustgevend verzorgingsritueel thuis.</p>
-      <p class="hero-poem"><em>Calm</em> staat voor rust, <em>mini</em> voor klein en dichtbij. Samen: een klein moment van rust, helemaal van jou.</p>
+      <h1>De Marokkaanse hammam,<br>gewoon bij u thuis.</h1>
+      <p class="lead">Breng de warmte van de Marokkaanse hammam naar uw eigen badkamer. Natuurlijke zwarte zeep, ghassoul, klei, scrub, oliën en kruiden — voor een rustgevend verzorgingsritueel thuis.</p>
+      <p class="hero-poem"><em>Calm</em> staat voor rust, <em>mini</em> voor klein en dichtbij. Samen: een klein moment van rust, helemaal van u.</p>
       <div class="hero-cta">
         <a class="btn btn-primary btn-lg" href="{allprod}">Bekijk onze producten</a>
         <a class="btn btn-ghost btn-lg" href="{guide}">Het ritueel</a>
@@ -74,7 +74,7 @@ def build_home():
   <div class="wrap">
     <div class="section-head center">
       <span class="eyebrow center">Onze producten</span>
-      <h2>Alles voor jouw ritueel</h2>
+      <h2>Alles voor uw ritueel</h2>
       <p class="lead" style="text-align:center;margin-inline:auto">Onze collectie bestaat uit zorgvuldig gekozen hammamproducten zoals zwarte zeep, ghassoul, klei, scrub, olien en accessoires. Producten met een Marokkaanse basis, zachte geuren en een verzorgend gevoel voor huid en haar.</p>
     </div>
     <div class="cat-grid">{cattiles}</div>
@@ -96,8 +96,8 @@ def build_home():
   <div class="wrap narrow center">
     <span class="eyebrow center">Gebruik &amp; ritueel</span>
     <h2 style="color:var(--cream)">Een ritueel dat klein mag zijn</h2>
-    <p class="lead" style="margin-inline:auto;color:rgba(255,250,245,.82)">Een hammammoment hoeft niet perfect te zijn. Het mag klein zijn. Eenvoudig. Op jouw manier. Daarom leggen we stap voor stap uit hoe je onze producten gebruikt, zodat je thuis rustig je eigen verzorgingsritueel kunt opbouwen.</p>
-    <a class="btn btn-primary btn-lg" href="{guide}" style="margin-top:1.6rem">Ontdek jouw ritueel</a>
+    <p class="lead" style="margin-inline:auto;color:rgba(255,250,245,.82)">Een hammammoment hoeft niet perfect te zijn. Het mag klein zijn. Eenvoudig. Op uw manier. Daarom leggen we stap voor stap uit hoe u onze producten gebruikt, zodat u thuis rustig uw eigen verzorgingsritueel kunt opbouwen.</p>
+    <a class="btn btn-primary btn-lg" href="{guide}" style="margin-top:1.6rem">Ontdek uw ritueel</a>
   </div>
 </section>
 
@@ -106,9 +106,9 @@ def build_home():
     <div class="feature-media reveal"><div class="round-frame"><img src="{over_img}" alt="Over Calmmini" loading="lazy" width="900" height="1125"></div></div>
     <div>
       <span class="eyebrow">Over Calmmini</span>
-      <h2>Verzorging die iets met je doet</h2>
-      <p class="lead">Calmmini is ontstaan vanuit liefde voor Marokkaanse verzorging, hammamrituelen en het gevoel dat je na een goed verzorgingsmoment weer helemaal bij jezelf komt.</p>
-      <p>Voor ons is verzorging niet alleen wat je op je huid doet. Het is ook wat het met je doet.</p>
+      <h2>Verzorging die iets met u doet</h2>
+      <p class="lead">Calmmini is ontstaan vanuit liefde voor Marokkaanse verzorging, hammamrituelen en het gevoel dat u na een goed verzorgingsmoment weer helemaal bij uzelf komt.</p>
+      <p>Voor ons is verzorging niet alleen wat u op uw huid doet. Het is ook wat het met u doet.</p>
       <a class="btn btn-ghost" href="{over}" style="margin-top:.6rem">Lees meer over Calmmini</a>
     </div>
   </div>
@@ -118,7 +118,7 @@ def build_home():
   <div class="wrap narrow cta-band">
     <span class="eyebrow center">Contact</span>
     <h2>Bestellen of advies nodig?</h2>
-    <p class="lead">Twijfel je welk product bij jou past of wil je een bestelling plaatsen? We denken graag met je mee.</p>
+    <p class="lead">Twijfelt u welk product bij u past of wilt u een bestelling plaatsen? We denken graag met u mee.</p>
     <a class="btn btn-primary btn-lg" href="{contact}" style="margin-top:1.4rem">Stuur ons een bericht</a>
   </div>
 </section>
@@ -129,12 +129,12 @@ def build_home():
            cattiles=cat_tiles, featured=product_grid(rel, featured), arrow=IC["arrow"],
            over=href(rel,"over-calmmini/"), contact=href(rel,"contact/"),
            homeseo=seo_block("Natuurlijke Marokkaanse hammamverzorging voor thuis", [
-               "CALMMINI brengt de Marokkaanse hammam naar je eigen badkamer. Ontdek sabon beldi "
+               "CALMMINI brengt de Marokkaanse hammam naar uw eigen badkamer. Ontdek sabon beldi "
                "(Marokkaanse zwarte zeep of savon noir), kant-en-klare ghassoul en klei, "
                "hammampoeder, verzorgingsoli\u00ebn, shea butter, scrub en accessoires \u2014 alles voor "
                "een compleet, natuurlijk hammamritueel voor haar en lichaam.",
-               "Of je nu op zoek bent naar Marokkaanse haar- en huidverzorging of losse onderdelen "
-               "van het ritueel: bij CALMMINI stel je eenvoudig je eigen ritueel samen. "
+               "Of u nu op zoek bent naar Marokkaanse haar- en huidverzorging of losse onderdelen "
+               "van het ritueel: bij CALMMINI stelt u eenvoudig uw eigen ritueel samen. "
                "Besteld en bezorgd in heel Nederland."]))
 
     org = {"@context":"https://schema.org","@type":"Organization","name":"CALMMINI",
@@ -219,11 +219,11 @@ def build_collection():
 """.format(crumb=crumb, filters=filters_sidebar(rel), toolbar=toolbar(rel, len(PRODUCTS)),
            grid=grid,
            seo=seo_block("Natuurlijke Marokkaanse verzorgingsproducten kopen", [
-               "Bij CALMMINI vind je natuurlijke verzorgingsproducten uit de Marokkaanse traditie. "
+               "Bij CALMMINI vindt u natuurlijke verzorgingsproducten uit de Marokkaanse traditie. "
                "Het assortiment is opgebouwd rond het hammamritueel: van reiniging met savon noir en de "
                "gommage-scrub, tot verzorging met ghassoul, hammamkruiden en natuurlijke oliën.",
-               "Of je nu op zoek bent naar Marokkaanse haarverzorging, natuurlijke lichaamsverzorging of "
-               "de losse onderdelen van een hammamritueel — je stelt eenvoudig je eigen ritueel samen. "
+               "Of u nu op zoek bent naar Marokkaanse haarverzorging, natuurlijke lichaamsverzorging of "
+               "de losse onderdelen van een hammamritueel — u stelt eenvoudig uw eigen ritueel samen. "
                "Gebruik de filters om per categorie of prijs te zoeken.",
            ]))
     itemlist = {"@context":"https://schema.org","@type":"ItemList",
@@ -354,14 +354,14 @@ def build_products():
         <div class="acc-body"><p>{gebruik}</p></div></details>
       {weten}
       <details><summary>Verzending &amp; retour</summary>
-        <div class="acc-body"><p>Je bestelling wordt in heel Nederland bezorgd. Bekijk de <a href="{ship}">verzend- en retourvoorwaarden</a>.</p></div></details>
+        <div class="acc-body"><p>Uw bestelling wordt in heel Nederland bezorgd. Bekijk de <a href="{ship}">verzend- en retourvoorwaarden</a>.</p></div></details>
     </div>
     <p class="fineprint">{disclaimer}</p>
   </div>
 </div>
 
 <section class="section tint"><div class="wrap">
-  <div class="section-head"><div class="row"><div><span class="eyebrow">Misschien ook interessant</span><h2>Past bij jouw ritueel</h2></div>
+  <div class="section-head"><div class="row"><div><span class="eyebrow">Misschien ook interessant</span><h2>Past bij uw ritueel</h2></div>
   <a class="link-more" href="{caturl}">Meer uit {catname} {arrow}</a></div></div>
   {related}
 </div></section>
@@ -405,8 +405,8 @@ def build_cart():
 <div class="wrap">
   <div data-cart-empty hidden class="empty-state">
     {cartic}
-    <h2>Je winkelwagen is leeg</h2>
-    <p class="lead" style="margin-inline:auto">Ontdek onze natuurlijke Marokkaanse verzorgingsproducten en stel je eigen ritueel samen.</p>
+    <h2>Uw winkelwagen is leeg</h2>
+    <p class="lead" style="margin-inline:auto">Ontdek onze natuurlijke Marokkaanse verzorgingsproducten en stel uw eigen ritueel samen.</p>
     <a class="btn btn-primary btn-lg" href="{allprod}" style="margin-top:1rem">Naar de webshop</a>
   </div>
   <div data-cart-wrap hidden class="cart-layout">
@@ -428,7 +428,7 @@ def build_cart():
 """.format(crumb=crumb, cartic=IC["cart"], allprod=href(rel,"producten/"),
            arrow=IC["arrow"], checkout=href(rel,"afrekenen/"))
     page("winkelwagen/", 1, "Winkelwagen | CALMMINI",
-         "Bekijk je winkelwagen bij CALMMINI en reken eenvoudig af.", body, jsonld=[crumb_ld])
+         "Bekijk uw winkelwagen bij CALMMINI en reken eenvoudig af.", body, jsonld=[crumb_ld])
 
 # --------------------------------------------------------------------------- #
 #  CHECKOUT                                                                    #
@@ -442,18 +442,26 @@ def build_checkout():
 <div class="wrap">
   <div data-order-confirm hidden class="empty-state confirm-card">
     {check}
-    <h2>Bedankt voor je bestelling!</h2>
-    <p class="lead" style="margin-inline:auto">We hebben je bestelling ontvangen. Ons team neemt zo snel mogelijk per e-mail contact met je op met een betaallink en de verdere details.</p>
-    <p style="margin-inline:auto;max-width:46ch;color:var(--ink-soft)">Houd ook je spam-map in de gaten. Een vraag in de tussentijd? Mail ons gerust via <a href="mailto:{email}">{email}</a>.</p>
+    <h2>Bedankt voor uw bestelling!</h2>
+    <p class="lead" style="margin-inline:auto">We hebben uw bestelling ontvangen. Ons team neemt zo snel mogelijk per e-mail contact met u op met een betaallink en de verdere details.</p>
+    <p style="margin-inline:auto;max-width:46ch;color:var(--ink-soft)">Houd ook uw spam-map in de gaten. Een vraag in de tussentijd? Mail ons gerust via <a href="mailto:{email}">{email}</a>.</p>
     <a class="btn btn-primary btn-lg" href="{allprod}" style="margin-top:1.2rem">Verder winkelen</a>
   </div>
   <form data-checkout-form data-checkout-wrap class="checkout">
     <div>
       <div class="form-card">
+        <h3>Levering</h3>
+        <div class="pay-methods">
+          <label class="pay-opt"><input type="radio" name="bezorgmethode" value="bezorgen" checked> Bezorgen — € 8,00</label>
+          <label class="pay-opt"><input type="radio" name="bezorgmethode" value="afhalen"> Afhalen in Amersfoort — gratis</label>
+        </div>
+        <p class="note" data-afhaal-info hidden style="margin-top:.7rem">U haalt uw bestelling op in Amersfoort. Na uw bestelling nemen we contact met u op om door te geven waar en wanneer u kunt ophalen.</p>
+      </div>
+      <div class="form-card">
         <h3>Contactgegevens</h3>
         <div class="field full"><label>E-mailadres</label><input type="email" name="email" required placeholder="naam@voorbeeld.nl"></div>
       </div>
-      <div class="form-card">
+      <div class="form-card" data-bezorg-velden>
         <h3>Bezorgadres</h3>
         <div class="frow">
           <div class="field"><label>Voornaam</label><input name="voornaam" required></div>
@@ -469,21 +477,21 @@ def build_checkout():
       </div>
     </div>
     <aside class="summary">
-      <h3>Je bestelling</h3>
+      <h3>Uw bestelling</h3>
       <div data-checkout-lines></div>
       <div class="row" style="margin-top:1rem"><span>Subtotaal</span><span data-subtotal>€ 0,00</span></div>
-      <div class="row"><span>Verzending</span><span data-ship>€ 0,00</span></div>
+      <div class="row"><span data-ship-label>Verzending</span><span data-ship>€ 0,00</span></div>
       <div class="row total"><span>Totaal</span><span data-total>€ 0,00</span></div>
       <button class="btn btn-primary btn-block btn-lg" type="submit" style="margin-top:1.2rem">Naar betalen</button>
       <p class="note" data-pay-error hidden style="color:var(--clay)"></p>
-      <p class="note">Je betaalt veilig via Mollie — iDEAL, Bancontact of creditcard. Verzendkosten: € 8,00.</p>
+      <p class="note">U betaalt veilig via Mollie — iDEAL, Bancontact of creditcard. Bezorgen € 8,00, afhalen in Amersfoort is gratis.</p>
     </aside>
   </form>
 </div>
 <div style="height:3rem"></div>
 """.format(crumb=crumb, check=IC["check"], allprod=href(rel,"producten/"), email=BRAND["email"])
     page("afrekenen/", 1, "Afrekenen | CALMMINI",
-         "Rond je bestelling af bij CALMMINI.", body, jsonld=[crumb_ld])
+         "Rond uw bestelling af bij CALMMINI.", body, jsonld=[crumb_ld])
 
 # --------------------------------------------------------------------------- #
 #  BLOG                                                                        #
@@ -605,14 +613,14 @@ def build_static():
 <div class="feature" style="align-items:start;gap:2.5rem">
   <div>
     <h2 class="contact-h">Neem contact op</h2>
-    <p>Heb je een vraag over een product, je bestelling of het hammamritueel? We helpen je graag verder.</p>
+    <p>Hebt u een vraag over een product, uw bestelling of het hammamritueel? We helpen u graag verder.</p>
     <p style="margin-top:1.2rem"><strong>E-mail</strong><br><a href="mailto:{email}">{email}</a></p>
     <p><strong>Klantenservice</strong><br>Bereikbaar via e-mail en het contactformulier.</p>
   </div>
   <div>
     <div data-contact-confirm hidden class="confirm-card" style="padding:1.6rem;border-radius:16px;background:var(--gold-tint)">
-      <h3>Bedankt voor je bericht!</h3>
-      <p style="margin:0">We hebben je bericht ontvangen en nemen zo snel mogelijk per e-mail contact met je op.</p>
+      <h3>Bedankt voor uw bericht!</h3>
+      <p style="margin:0">We hebben uw bericht ontvangen en nemen zo snel mogelijk per e-mail contact met u op.</p>
     </div>
     <form class="form-card" data-contact-form>
       <h3>Stuur een bericht</h3>
@@ -638,10 +646,10 @@ def build_static():
          "Ons assortiment bestaat uit natuurlijke Marokkaanse verzorgingsproducten. Gedetailleerde ingrediëntinformatie wordt per product toegevoegd."),
         ("Voor welk haar- en huidtype zijn de producten geschikt?",
          "[Wordt per product toegevoegd.] Neem bij twijfel gerust contact met ons op."),
-        ("Naar welke landen leveren jullie?",
+        ("Naar welke landen wordt er geleverd?",
          "CALMMINI richt zich primair op de Nederlandse markt en bezorgt in heel Nederland. [Overige leverinformatie wordt toegevoegd.]"),
         ("Hoe kan ik betalen?",
-         "Je kunt straks betalen met onder andere iDEAL, Bancontact, creditcard en PayPal. [Definitieve betaalmethoden worden gekoppeld.]"),
+         "U kunt straks betalen met onder andere iDEAL, Bancontact, creditcard en PayPal. [Definitieve betaalmethoden worden gekoppeld.]"),
     ]
     faq_inner = '<div class="acc faq-list">' + "".join(
         '<details%s><summary>%s</summary><div class="acc-body">%s</div></details>'
@@ -661,27 +669,33 @@ def build_static():
         faq_body, jsonld=[crumb_ld, faq_ld])
 
     # Bedankt-/betaalbevestigingspagina (retour vanuit Mollie)
-    simple_page("bestelling-geplaatst/", "Bedankt voor je bestelling | CALMMINI",
-        "Je betaling is ontvangen. Bedankt voor je bestelling bij CALMMINI.",
-        "Bedankt voor je bestelling!", "",
-        "<p class=\"lead\">Je betaling wordt verwerkt en je ontvangt zo een bevestiging per "
-        "e-mail met de details van je bestelling.</p>"
+    simple_page("bestelling-geplaatst/", "Bedankt voor uw bestelling | CALMMINI",
+        "Uw betaling is ontvangen. Bedankt voor uw bestelling bij CALMMINI.",
+        "Bedankt voor uw bestelling!", "",
+        "<p class=\"lead\">Uw betaling wordt verwerkt en u ontvangt zo een bevestiging per "
+        "e-mail met de details van uw bestelling.</p>"
+        "<div data-afhaal-blok hidden style=\"margin:1.4rem 0;padding:1.3rem 1.4rem;background:var(--gold-tint,#f3ebd9);border:1px solid var(--gold-soft,#cbb681);border-radius:14px\">"
+        "<h2 style=\"margin:0 0 .4rem;font-size:1.2rem\">Afhalen in Amersfoort</h2>"
+        "<p style=\"margin:0\">U hebt gekozen voor afhalen. We nemen zo snel mogelijk contact met u op om door te geven waar en wanneer u uw bestelling in Amersfoort kunt ophalen.</p>"
+        "<p style=\"margin:.6rem 0 0;font-size:.92rem;color:var(--ink-soft,#706658)\">Vragen in de tussentijd? Mail ons gerust via <a href=\"mailto:%s\">%s</a>.</p>"
+        "</div>"
         "<p>Nog een vraag? Mail ons gerust via <a href=\"mailto:%s\">%s</a>.</p>"
         "<p style=\"margin-top:1.4rem\"><a class=\"btn btn-primary btn-lg\" href=\"%s\">Verder winkelen</a></p>"
-        % (BRAND["email"], BRAND["email"], href(rel_prefix(1), "producten/")))
+        "<script>(function(){try{var a=new URLSearchParams(location.search).get('afhalen')==='1'||localStorage.getItem('calmmini_last_method')==='afhalen';if(a){var b=document.querySelector('[data-afhaal-blok]');if(b)b.hidden=false;}localStorage.removeItem('calmmini_last_method');}catch(e){}})();</script>"
+        % (BRAND["email"], BRAND["email"], BRAND["email"], BRAND["email"], href(rel_prefix(1), "producten/")))
 
     # Shipping/returns (enriched from client's terms), privacy (placeholder), terms (real)
     ph = lambda: '<p><em>[Deze tekst is een placeholder en wordt later door CALMMINI ingevuld.]</em></p>'
     ship_inner = (
         "<h2>Verzending</h2>"
         "<p>CALMMINI bezorgt in heel Nederland. Binnen Nederland gelden vaste verzendkosten. "
-        "We streven ernaar je bestelling binnen 5–10 werkdagen na bevestiging te leveren.</p>"
+        "We streven ernaar uw bestelling binnen 5–10 werkdagen na bevestiging te leveren.</p>"
         "<h2>Buiten Nederland</h2>"
         "<p>Bij leveringen buiten de EU zijn eventuele invoerrechten voor rekening van de klant.</p>"
         "<h2>Retourneren &amp; garantie</h2>"
         "<p>Voor consumenten geldt een garantie van 2 jaar dat producten bij levering aan de "
         "overeenkomst voldoen. Neem voor retouren of vragen contact met ons op via "
-        "<a href=\"mailto:%s\">%s</a>. De volledige voorwaarden lees je in onze "
+        "<a href=\"mailto:%s\">%s</a>. De volledige voorwaarden leest u in onze "
         "<a href=\"%s\">algemene voorwaarden</a>.</p>" % (
             BRAND["email"], BRAND["email"], href(rel_prefix(1), "algemene-voorwaarden/")))
     simple_page("verzending-en-retour/", "Verzending & retour | CALMMINI",
@@ -691,7 +705,7 @@ def build_static():
         crumbtrail=[("Home",""),("Verzending & retour","verzending-en-retour/")])
     simple_page("privacybeleid/", "Privacybeleid | CALMMINI",
         "Het privacybeleid van CALMMINI.",
-        "Privacybeleid", "", "<h2>Privacy</h2>"+ph()+"<h2>Cookies</h2>"+ph()+"<h2>Je rechten</h2>"+ph(),
+        "Privacybeleid", "", "<h2>Privacy</h2>"+ph()+"<h2>Cookies</h2>"+ph()+"<h2>Uw rechten</h2>"+ph(),
         crumbtrail=[("Home",""),("Privacybeleid","privacybeleid/")])
     terms_inner = (
         '<p class="lead">CalmMini Hammamrituelen · %s · '
@@ -735,15 +749,15 @@ def build_guide():
 <div class="page-hero"><div class="wrap">
   <span class="eyebrow">Gebruik &amp; ritueel</span>
   <h1>Gebruik &amp; ritueel</h1>
-  <p class="lead">Ontdek stap voor stap hoe je onze producten op een fijne en veilige manier gebruikt. Zo haal je het meeste uit jouw hammamritueel thuis.</p>
+  <p class="lead">Ontdek stap voor stap hoe u onze producten op een fijne en veilige manier gebruikt. Zo haalt u het meeste uit uw hammamritueel thuis.</p>
 </div></div>
 {crumb}
 {secs}
 <section class="section tint"><div class="wrap">
   <div class="section-head center">
     <span class="eyebrow center">Mooie combinaties</span>
-    <h2>Stel je eigen ritueel samen</h2>
-    <p class="lead" style="text-align:center;margin-inline:auto">Deze combinaties werken fijn samen — een mooie manier om je hammamroutine compleet te maken.</p>
+    <h2>Stel uw eigen ritueel samen</h2>
+    <p class="lead" style="text-align:center;margin-inline:auto">Deze combinaties werken fijn samen — een mooie manier om uw hammamroutine compleet te maken.</p>
   </div>
   <div class="combo-grid">{combos}</div>
 </div></section>
@@ -768,9 +782,9 @@ def build_guide():
                 "Een compleet traditioneel ritueel met een zachte, verzorgde afdronk."),
              ]))
     page("gebruik-en-ritueel/", 1,
-         "Gebruik & ritueel — zo gebruik je onze hammamproducten | CALMMINI",
-         "Ontdek stap voor stap hoe je sabon beldi, ghassoul, klei, hammampoeder, oliën, "
-         "butter en scrub gebruikt. Zo haal je het meeste uit jouw hammamritueel thuis.",
+         "Gebruik & ritueel — zo gebruikt u onze hammamproducten | CALMMINI",
+         "Ontdek stap voor stap hoe u sabon beldi, ghassoul, klei, hammampoeder, oliën, "
+         "butter en scrub gebruikt. Zo haalt u het meeste uit uw hammamritueel thuis.",
          body, active="guide", jsonld=[crumb_ld])
 
 def build_404():
