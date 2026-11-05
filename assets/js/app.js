@@ -9,15 +9,13 @@
   var CART_KEY = "calmmini_cart_v1";
   var SHIP_NOTE = "Verzendkosten worden berekend bij het afrekenen.";
 
-  /* ===== BETALING & FORMULIER CONFIG =========================================
-     PAY_ENDPOINT : URL van je Cloudflare Worker voor de Mollie-betaling
-                    (zie cloudflare-worker/README-betaling.md). Leeg = demo.
-     SHIPPING     : vast verzendbedrag (moet gelijk zijn aan SHIPPING in de Worker).
-     FORM_KEY     : je Web3Forms access key voor het CONTACTformulier.          */
+  /* ===== CONFIG ==============================================================
+     PAY_ENDPOINT : URL van uw Cloudflare Worker. Verzorgt de Mollie-betaling
+                    én het versturen van bestel- en contactberichten.
+                    Er hoeft verder geen sleutel in de site te staan.
+     SHIPPING     : vaste verzendkosten (€) — gelijk houden aan SHIPPING in de Worker. */
   var PAY_ENDPOINT = "https://calmmini-pay.dennisvvdijk98.workers.dev";
-  var SHIPPING = 8;                 // vaste verzendkosten (€)
-  var FORM_KEY = "";                // Web3Forms access key (contactformulier)
-  var FORM_ENDPOINT = "https://api.web3forms.com/submit";
+  var SHIPPING = 8;
   /* =========================================================================== */
 
   /* ---------- helpers ---------- */
@@ -248,14 +246,38 @@
     }).join("");
     updateSummary();
   }
+  function selectedMethod() {
+    var el = document.querySelector('[name="bezorgmethode"]:checked');
+    return el ? el.value : "bezorgen";
+  }
   function updateSummary() {
     var sub = cartTotal();
     var hasShip = !!document.querySelector("[data-ship]");   // alleen op de afrekenpagina
-    var ship = (hasShip && sub > 0) ? SHIPPING : 0;
+    var afhalen = selectedMethod() === "afhalen";
+    var ship = (hasShip && sub > 0 && !afhalen) ? SHIPPING : 0;
     $all("[data-subtotal]").forEach(function (e) { e.textContent = eur(sub); });
-    $all("[data-ship]").forEach(function (e) { e.textContent = eur(ship); });
+    $all("[data-ship]").forEach(function (e) { e.textContent = afhalen ? "Gratis" : eur(ship); });
+    $all("[data-ship-label]").forEach(function (e) { e.textContent = afhalen ? "Afhalen (Amersfoort)" : "Verzending"; });
     $all("[data-total]").forEach(function (e) { e.textContent = eur(sub + ship); });
   }
+  // Leveringskeuze (bezorgen / afhalen) toepassen: adresvelden tonen + verplicht maken
+  function applyMethod() {
+    var afhalen = selectedMethod() === "afhalen";
+    var adres = document.querySelector("[data-bezorg-velden]");
+    if (adres) {
+      adres.hidden = afhalen;
+      $all("input, select", adres).forEach(function (f) {
+        if (afhalen) { f.dataset._req = f.required ? "1" : ""; f.required = false; }
+        else if (f.dataset._req === "1") { f.required = true; }
+      });
+    }
+    var info = document.querySelector("[data-afhaal-info]");
+    if (info) info.hidden = !afhalen;
+    updateSummary();
+  }
+  document.addEventListener("change", function (e) {
+    if (e.target && e.target.name === "bezorgmethode") applyMethod();
+  });
   document.addEventListener("click", function (e) {
     var rm = e.target.closest("[data-rm]");
     if (rm) { e.preventDefault(); removeItem(rm.getAttribute("data-rm")); }
@@ -276,6 +298,7 @@
         '<div class="price" style="font-size:.9rem">' + eur(p.price * i.qty) + '</div></div>';
     }).join("");
     updateSummary();
+    applyMethod();
     var form = $("[data-checkout-form]");
     if (form && !form._bound) {
       form._bound = true;
@@ -287,8 +310,12 @@
         var cart = readCart();
         if (!cart.length) { location.href = BASE + "winkelwagen/"; return; }
 
+        var methode = selectedMethod();
+        try { localStorage.setItem("calmmini_last_method", methode); } catch (e) {}
+
         var order = {
           items: cart.map(function (i) { return { slug: i.slug, qty: i.qty }; }),
+          method: methode,
           customer: {
             email: g("email"), voornaam: g("voornaam"), achternaam: g("achternaam"),
             postcode: g("postcode"), huisnummer: g("huisnummer"),
@@ -321,50 +348,45 @@
           .catch(function (err) {
             if (btn) { btn.disabled = false; btn.textContent = btn._t; }
             var note = form.querySelector("[data-pay-error]");
-            var msg = "Er ging iets mis bij het starten van de betaling. Probeer het opnieuw.";
+            var msg = "Betaling starten mislukt: " + (err && err.message ? err.message : "onbekende fout") + ". Probeer opnieuw.";
             if (note) { note.hidden = false; note.textContent = msg; } else { alert(msg); }
           });
       });
     }
+  }
 
-    // Contactformulier -> zelfde mailkanaal
+  /* ---------- contactformulier (via de Worker) ---------- */
+  function bindContact() {
     var cform = $("[data-contact-form]");
-    if (cform && !cform._bound) {
-      cform._bound = true;
-      cform.addEventListener("submit", function (ev) {
-        ev.preventDefault();
-        var btn = cform.querySelector('button[type="submit"]');
-        var g = function (n) { var el = cform.querySelector('[name="' + n + '"]'); return el ? el.value.trim() : ""; };
-        function showOk() {
-          var ok = $("[data-contact-confirm]");
-          if (ok) { cform.hidden = true; ok.hidden = false; }
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-        if (!FORM_KEY) { showOk(); return; }
-        if (btn) { btn._t = btn.textContent; btn.disabled = true; btn.textContent = "Bezig met versturen…"; }
-        fetch(FORM_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json", Accept: "application/json" },
-          body: JSON.stringify({
-            access_key: FORM_KEY,
-            subject: "Nieuw bericht via de website — CALMMINI",
-            from_name: "CALMMINI website",
-            replyto: g("email"),
-            naam: g("naam"), email: g("email"), message: g("bericht"),
-          }),
+    if (!cform || cform._bound) return;
+    cform._bound = true;
+    cform.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var btn = cform.querySelector('button[type="submit"]');
+      var g = function (n) { var el = cform.querySelector('[name="' + n + '"]'); return el ? el.value.trim() : ""; };
+      function showOk() {
+        var ok = $("[data-contact-confirm]");
+        if (ok) { cform.hidden = true; ok.hidden = false; }
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      if (!PAY_ENDPOINT) { showOk(); return; }
+      if (btn) { btn._t = btn.textContent; btn.disabled = true; btn.textContent = "Bezig met versturen…"; }
+      fetch(PAY_ENDPOINT.replace(/\/$/, "") + "/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ naam: g("naam"), email: g("email"), bericht: g("bericht") }),
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (d && d.success) { showOk(); } else { throw new Error("fout"); }
         })
-          .then(function (r) { return r.json(); })
-          .then(function (d) {
-            if (d && d.success) { showOk(); } else { throw new Error("fout"); }
-          })
-          .catch(function () {
-            if (btn) { btn.disabled = false; btn.textContent = btn._t; }
-            var note = cform.querySelector("[data-pay-error]");
-            var msg = "Er ging iets mis. Probeer het opnieuw of mail ons rechtstreeks.";
-            if (note) { note.hidden = false; note.textContent = msg; } else { alert(msg); }
-          });
-      });
-    }
+        .catch(function () {
+          if (btn) { btn.disabled = false; btn.textContent = btn._t; }
+          var note = cform.querySelector("[data-pay-error]");
+          var msg = "Er ging iets mis. Probeer het opnieuw of mail ons rechtstreeks.";
+          if (note) { note.hidden = false; note.textContent = msg; } else { alert(msg); }
+        });
+    });
   }
 
   /* ---------- reveal on scroll ---------- */
@@ -383,4 +405,5 @@
   syncBadge();
   renderCart();
   renderCheckout();
+  bindContact();
 })();
